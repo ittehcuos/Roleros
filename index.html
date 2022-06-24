@@ -6,6 +6,10 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="style.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Orbitron:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&display=swap" rel="stylesheet">
        <title>Roleros landing</title>
 </head>
 <body>
@@ -18,10 +22,11 @@
                             <input type="checkbox" name="" id="menu_desplegable">
                             <label class="bars_container" for="menu_desplegable"><i class="fa-solid fa-bars"></i></label>
                             <ul class="menu">
-                                   <li><a href="#inicio">Inicio</a></li>
-                                   <li><a href="#juego">Tu juego</a></li>
-                                   <li><a href="#">Contacto</a></li>
-                                   <li><a href="#">Iniciar Sesión/Registarme</a></li>
+                                   <li><a class="amenu" href="#inicio">Inicio</a></li>
+                                   <li><a class="amenu" href="#juego">Juego</a></li>
+                                   <li><a class="amenu" href="#funcionamiento">Pasos</a></li>
+                                   <li><a class="amenu" href="./Contacto.html">Contacto</a></li>
+                                   <li><a class="amenu" href="./login.html">Registrate</a></li>
                             </ul>
                      </div>
               </nav>
@@ -36,13 +41,69 @@
                      </div>
               </section>
               <section id="juego">
-                     <div class="juego_container">
-                            <article class="juego_escenarios">
-                                   <h2 class="escenarios_titulo">Crea tu escenarios</h2>
-                                   <div class="escenarios_galeria"></div>
-                            </article>
-                     </div>
+                            <div class="juego_container">
+                                   <article class="juego_escenarios">
+                                          <h2 class="escenarios_titulo">Creá tus escenarios</h2>
+                                                 <div class="galeria">
+                                                        <input class="radio" type="radio" name="navegacion" id="_1" checked>
+                                                        <input class="radio" type="radio" name="navegacion" id="_2">
+                                                        <input class="radio" type="radio" name="navegacion" id="_3">
+                                                        <input class="radio" type="radio" name="navegacion" id="_4"> 
+                                                        <img src="./img/181514698-.webp"  alt="Galeria CSS 1" />
+                                                        <img src="./img/5e69jx6g-900.jpg"  alt="Galeria CSS 2"  />
+                                                        <img src="./img/8f0c40c7488758e4b42621b5bc7291ee-700.jpg" alt="Galeria CSS 3" />
+                                                        <img src="./img/sun-rays-drawing-alone-warrior-wallpaper-preview.jpg" alt="Galeria CSS 4" />
+                                                 </div>
+                                   </article>
+                                   <article class="juego_personajes">
+                                          <h2 class="juego_personajes">Elegí tus personajes</h2>
+                                          <img class="personaje-img" src="./img/personajes.webp" alt="Personajes en tablero">
+                                   </article>
+                                   <article class="juego_magicos">
+                                          <h2 class="juego_magicos">Creá objetos mágicos</h2>
+                                          <img  class="magicos-img" src="./img/pngwing.com (17).png" alt="">
+                                   </article>
+                            </div>
+                     <!--<img class="plantas" src="./img/pngwing.com (6).png" alt="">-->
               </section>
+              <section id="ayuda">
+                     <article class="ayuda_container">
+                            <h2 class="ayuda-h2">¿Perdido?</h2>
+                            <p class="ayuda-p">Tenemos guías y escenarios armados para que tu única preocupación sea jugar.</p>
+                            <div class="ayuda-dado"><img class="roll" src="./img/pngwing.com (9).png" alt=""> </div>
+                     </article>
+              </section>
+              <section id="funcionamiento">
+                     <article class="funcionamiento_container">
+                            <h2 class="rolear-h2">¿Cómo funciona?</h2>
+                            <div class="funcionamiento_rolear">
+                                   <div class="card1">
+                                          <div class="face front" ><h3 class="rolear-p1">1 . Te registrás </h3> <img class="registro" src="./img/agregar-simbolo-de-usuario (3).png" alt=""></div>
+                                          <div class="face back" ><p class="roleartext1">Te registrás en la página e indicás que sí en el campo<strong>-quiero equipo-</strong> del formulario de registro, para poder asignarte uno.</p></div>
+                                   </div>
+                                   <div class="card2">
+                                          <div class="face front" ><h3 class="rolear-p2">2 . Ingresás a discord</h3><img class="discord" src="./img/discord (2).png" alt=""></div>
+                                          <div class="face back" ><p class="roleartext2">Ingresás al discord de la comunidad a través del link que te enviaremos a tu correo de registro(revisá spam).</p></div>
+                                   </div>
+                                   <div class="card3">
+                                          <div class="face front"><h3 class="rolear-p3">3 . Te sumás a un equipo</h3><img class="grupo" src="./img/grupo.png" alt=""></div>
+                                          <div class="face back" > <p class="roleartext3">En discord se activará el equipo que te corresponde, ingresá y ¡Presentate!</p></div>
+                                   </div>
+                            </div>
+                            <a class="rola" ><p class="rolear-p4">¡A ROLEAR!</p></a>
+                            <div class="funcionamiento_dudas">
+                                   <h2 class="dudas-h2">¿Seguís con dudas?</h2>
+                                   <a href="./Contacto.html" ><p class="contactanos-p">Contactanos</p></a>
+                            </div>
+                     </article>
+              </section>
+              <footer>
+                     <div class="footer_container">
+                            <div class="logo-div">_____________<img class="roleroslogo" src="./img/Roleroslogo.png" alt="">_____________</div>
+                            <p class="correo-p"> <img class="correo-img" src="./img/gmail.png" alt=""> roleros@gmail.com</p>
+                            <p class="autor-p" >Powered by Antonella <a href="https://github.com/ittehcuos/" ><img class="github-img" src="./img/github.png" alt="" ></a> </p>
+                     </div>
+              </footer>
        </main>     
 </body>
 </html>

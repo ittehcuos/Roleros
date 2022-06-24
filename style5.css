@@ -1,0 +1,285 @@
+div.funcionamiento_rolear{
+       display: flex;
+       flex-direction: column;
+}
+h2.rolear-h2{
+       margin: 1rem;
+       align-self: center;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+}
+
+p.rolear-p1{
+       margin-left: 13%;
+       margin-bottom: .4rem;
+       font-family: 'Orbitron', sans-serif;
+       font-size: 17px;
+       background-image: linear-gradient(cyan, blueviolet);
+       background-position: 0% 100%;
+       background-repeat: no-repeat;
+       background-size: 0% 1.5px;
+       transition: background-size 1.7s;
+}
+p.rolear-p1:hover, p.rolear-p1:focus {
+       background-size: 15% 1.5px;
+   }
+
+img.cursor{
+       height: 20px;
+}
+p.rolear-p2{
+       margin-left: 23%;
+       margin-bottom: .4rem;
+       font-family: 'Orbitron', sans-serif;
+       font-size: 17px;
+       background-image: linear-gradient(cyan, blueviolet);
+       background-position: 0% 100%;
+       background-repeat: no-repeat;
+       background-size: 0% 1.5px;
+       transition: background-size 1.7s;
+}
+p.rolear-p2:hover, p.rolear-p2:focus {
+       background-size: 24% 1.5px;
+   }
+
+p.rolear-p3{
+       margin-left: 33%;
+       margin-bottom: .4rem;
+       font-family: 'Orbitron', sans-serif;
+       font-size: 17px;
+       background-image: linear-gradient(cyan, blueviolet);
+       background-position: 0% 100%;
+       background-repeat: no-repeat;
+       background-size: 0% 1.5px;
+       transition: background-size 1.7s;
+}
+p.rolear-p3:hover, p.rolear-p3:focus {
+       background-size: 30% 1.5px;
+   }
+
+p.rolear-p4{
+       text-align: center;
+       margin-left: 30%;
+       /*background: white;*/
+       width: 10rem;
+       padding: .5rem;
+       margin-top: 1rem;
+       color: blueviolet;
+       text-shadow: 3px 2px 2px cyan;
+       font-weight: bold;
+       font-size: 20px;
+       font-family: 'Orbitron', sans-serif;
+}
+
+/*a {
+       width: 20%;
+       text-decoration: none;
+       background-image: linear-gradient(currentColor, currentColor);
+       background-position: 0% 100%;
+       background-repeat: no-repeat;
+       background-size: 0% 2px;
+       transition: background-size .3s;
+   }
+   a:hover, a:focus {
+       background-size: 100% 2px;
+   }*/
+
+
+   .card1 {
+       position: relative;
+       width: 300px;
+       height: 350px;
+       margin: 20px;
+}
+   
+.card1 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+       overflow: hidden;
+       transition: .5s;
+       background-color: black;
+}
+   
+.card1 .front {
+       transform: perspective(600px) rotateY(0deg);
+       box-shadow: 3px 3px 3px orange;
+}
+   
+.card1 .front img {
+       position: absolute;
+       top: 50%;
+       left: 40%;
+       width: 70px;
+}
+   
+.card1 .front h3 {
+       position: absolute;
+       top: 30%;
+       width: 100%;
+       height: 40px;
+       line-height: 45px;
+       color: #fff;
+       text-align: center;
+       font-family: 'Orbitron', sans-serif;
+}
+   
+.card1 .back {
+       transform: perspective(600px) rotateY(180deg);
+       background: white;
+       padding: 15px;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       box-shadow: 3px 3px 3px orange;
+}
+   
+.card1 .back p {
+       letter-spacing: 1px;
+       font-family: 'Orbitron', sans-serif;
+} 
+   
+.card1:hover .front {
+       transform: perspective(600px) rotateY(180deg);
+}
+   
+.card1:hover .back {
+       transform: perspective(600px) rotateY(360deg);
+}
+
+.fade-out {
+       animation: fadeOut ease 8s;
+       -webkit-animation: fadeOut ease 8s;
+       -moz-animation: fadeOut ease 8s;
+       -o-animation: fadeOut ease 8s;
+       -ms-animation: fadeOut ease 8s;
+     }
+     @keyframes fadeOut {
+       0% {
+         opacity:1;
+       }
+       50%{
+         opacity: 0;
+       }
+       100% {
+         opacity:1;
+       }
+     }
+     
+     @-moz-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-webkit-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-o-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-ms-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+}
+.fade-out {
+       animation: fadeOut ease 8s;
+       -webkit-animation: fadeOut ease 8s;
+       -moz-animation: fadeOut ease 8s;
+       -o-animation: fadeOut ease 8s;
+       -ms-animation: fadeOut ease 8s;
+     }
+     @keyframes fadeOut {
+       0% {
+         opacity:1;
+       }
+       50%{
+         opacity: 0;
+       }
+       100% {
+         opacity:1;
+       }
+     }
+     
+     @-moz-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-webkit-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-o-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+     }
+     
+     @-ms-keyframes fadeOut {
+       0% {
+              opacity:1;
+       }
+       50%{
+              opacity: 0;
+       }
+       100% {
+              opacity:1;
+       }
+       }
+

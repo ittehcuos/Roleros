@@ -8,8 +8,10 @@ body {
        width: 100vw;
        max-width: 100%;
        height: 100%;
-       position: absolute;
-       background: white;
+       background: rgb(40, 40, 40);
+       display: flex;
+       flex-direction: column;
+
 }
 a{
        text-decoration: none;
@@ -87,18 +89,18 @@ ul.menu{
 
 li{
        display: block;
-       background:rebeccapurple;
+       background:black;
        width: 100%;
        margin: 0;
        padding: 10px;
        text-align: center;
 }
- a{
-       font-family: 'Rajdhani', sans-serif;
+ a.amenu{
+       font-family: 'Gentium Plus', serif;
        font-weight: 600;
-        color: rgb(10, 10, 10);
-        text-align: center;
-        font-size: 30px;
+       color: whitesmoke;
+       text-align: center;
+       font-size: 30px;
  }
 /*-----Fin Nav-----*/
 main{
@@ -107,7 +109,7 @@ main{
        height: auto;
        position: absolute;
        top: 129px;
-       background: palevioletred;
+       background: rgb(40, 40, 40);
 }
 
 /*----------INICIO SECCION INICIO---------*/
@@ -139,11 +141,640 @@ h2.inicio_titulo{
        color: white;
        font-size: 40px;
        text-shadow: 2px 2px 2px black;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
 }
 p.inicio_parrafo{
        text-align: justify;
        color: white;
        font-size: 20px;
        text-shadow: 2px 2px 2px black;
+       font-family: 'Gentium Plus', serif;
 }
 /* Fin sección inicio*/
+
+/*----------Inicio seccion JUEGO-----------*/
+section.juego{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+}
+/*img.plantas{
+       position:relative;
+       top: 0%;
+       right: 5%;
+}*/
+div.juego_container{
+       height: 100%;
+}
+/*----------INICIO SECCION ESCENARIOS-----------*/
+article.juego_escenarios{
+       height: 70vh;
+       background: rgb(40, 40, 40);
+}
+h2.escenarios_titulo{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 1rem;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+       color: rgb(206, 206, 206);
+}
+
+input.radio{
+       display: flex;
+       flex-direction: row;
+       align-items: baseline;
+       margin: .2rem;
+}
+.galeria {
+       height: 90%;
+       width: var(--w);
+       display: flex;
+       flex-direction: row;
+       align-items:flex-end;
+       justify-content: center;
+       position: relative; 
+       margin: auto;
+       /*border: 1px solid #555; */
+}
+     
+.galeria img {
+       position: absolute;
+       top: 0%;
+       left: 30;
+       opacity: 0;
+       transition: opacity 3s;
+       width:  310px;
+       height: 300px;
+}
+     
+.galeria input[type=radio] {
+       position: relative;
+       bottom: calc(-1 * var(--h) - 1.5em);
+       left: .5em;
+}
+     
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+       opacity: 1;
+}
+     
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+       opacity: 1;
+}
+     
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+       opacity: 1;
+}
+     
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+       opacity: 1;
+}
+
+/*------------INICIO SECCION PERSONAJES-----------*/
+article.juego_personajes{
+       margin-top: 2rem;
+       background: rgb(40, 40, 40);
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content:space-between;
+}
+
+img.personaje-img{
+       width: 310px; 
+       height: 300px;
+       align-items: center;
+}
+
+h2.juego_personajes{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 1rem;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+       color: rgb(206, 206, 206);
+}
+/*----------INICIO SECCION MAGICOS---------*/
+article.juego_magicos{
+       background: rgb(40, 40, 40);
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+}
+h2.juego_magicos{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 1rem;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+       color: rgb(206, 206, 206);
+}
+
+img.magicos-img{
+       width: 210px; 
+       height: 200px;
+       align-items: center;
+}
+img.magicos-img:hover{
+       rotateZ(6deg);
+}
+
+/*---------INICIO SECCION AYUDA----------*/
+section.ayuda{
+
+}
+article.ayuda_container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 2rem;
+}
+
+h2.ayuda-h2{
+       margin: 1rem;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+       color: rgb(206, 206, 206);
+}
+
+p.ayuda-p{
+       width: 90%;
+       margin: 1rem;
+       font-family: 'Gentium Plus', serif;
+       text-align: center;
+       color: rgb(206, 206, 206);
+}
+div.ayuda-dado{
+       width: 90%;
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+img.roll{
+       width: 50px;
+       height: auto;
+       /*animation: roll ease 8s;
+       -webkit-animation: roll ease 8s;
+       -moz-animation: roll ease 8s;
+       -o-animation: roll ease 8s;
+       -ms-animation: roll ease 8s*/;
+}
+
+
+/*---------INICIO SECCION funcionamiento----------*/
+article.funcionamiento_container{
+       background: rgb(40, 40, 40);
+       width: 100%;
+       margin-top: 2rem;
+}
+/*---------DIV ROLEAR---------*/
+div.funcionamiento_rolear{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+h2.rolear-h2{
+       margin: 1rem;
+       align-self: center;
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 2px blueviolet;
+       color: rgb(206, 206, 206);
+}
+/*       TARJETA 1 frente */
+.card1 {
+       position: relative;
+       width: 300px;
+       height: 350px;
+       margin: 20px;
+       border-radius: 10px;
+}
+   
+.card1 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+       overflow: hidden;
+       transition: 1.5s;
+       background-color: black;
+       border-radius: 10px;
+}
+   
+.card1 .front {
+       transform: perspective(600px) rotateY(0deg);
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card1 .front img {
+       position: absolute;
+       top: 50%;
+       left: 40%;
+       width: 70px;
+}
+   
+.card1 .front h3 {
+       position: absolute;
+       top: 30%;
+       width: 100%;
+       height: 40px;
+       line-height: 45px;
+       color: rgb(206, 206, 206);
+       text-align: center;
+       font-family: 'Orbitron', sans-serif;
+}
+   
+.card1 .back {
+       transform: perspective(600px) rotateY(180deg);
+       background: white;
+       padding: 15px;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card1 .back p {
+       letter-spacing: 1px;
+       font-family: 'Gentium Plus', serif;
+} 
+   
+.card1:hover .front {
+       transform: perspective(600px) rotateY(180deg);
+}
+   
+.card1:hover .back {
+       transform: perspective(600px) rotateY(360deg);
+}
+
+/*-----------TARJETA 2 Frente*/
+.card2 {
+       position: relative;
+       width: 300px;
+       height: 350px;
+       margin: 20px;
+       border-radius: 10px;
+}
+   
+.card2 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+       overflow: hidden;
+       transition: 1.5s;
+       background-color: black;
+       border-radius: 10px;
+}
+   
+.card2 .front {
+       transform: perspective(600px) rotateY(0deg);
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card2 .front img {
+       position: absolute;
+       top: 50%;
+       left: 40%;
+       width: 70px;
+}
+   
+.card2 .front h3 {
+       position: absolute;
+       top: 30%;
+       width: 100%;
+       height: 40px;
+       line-height: 45px;
+       color: rgb(206, 206, 206);
+       text-align: center;
+       font-family: 'Orbitron', sans-serif;
+}
+   
+.card2 .back {
+       transform: perspective(600px) rotateY(180deg);
+       background: white;
+       padding: 15px;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card2 .back p {
+       letter-spacing: 1px;
+       font-family: 'Gentium Plus', serif;
+} 
+   
+.card2:hover .front {
+       transform: perspective(600px) rotateY(180deg);
+}
+   
+.card2:hover .back {
+       transform: perspective(600px) rotateY(360deg);
+}
+
+/*----------TARJETA 3 Frente----------*/
+.card3 {
+       position: relative;
+       width: 300px;
+       height: 350px;
+       margin: 20px;
+       border-radius: 10px;
+}
+   
+.card3 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+       overflow: hidden;
+       transition: 1.5s;
+       background-color: black;
+       border-radius: 10px;
+}
+   
+.card3 .front {
+       transform: perspective(600px) rotateY(0deg);
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card3 .front img {
+       position: absolute;
+       top: 50%;
+       left: 40%;
+       width: 70px;
+}
+   
+.card3 .front h3 {
+       position: absolute;
+       top: 30%;
+       width: 100%;
+       height: 40px;
+       line-height: 45px;
+       color: rgb(206, 206, 206);
+       text-align: center;
+       font-family: 'Orbitron', sans-serif;
+}
+   
+.card3 .back {
+       transform: perspective(600px) rotateY(180deg);
+       background: white;
+       padding: 15px;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       box-shadow: 3px 3px 3px cyan;
+       border-radius: 10px;
+}
+   
+.card3 .back p {
+       letter-spacing: 1px;
+       font-family: 'Gentium Plus', serif;
+} 
+   
+.card3:hover .front {
+       transform: perspective(600px) rotateY(180deg);
+}
+   
+.card3:hover .back {
+       transform: perspective(600px) rotateY(360deg);
+}
+
+
+p.rolear-p4{
+
+       text-align: center;
+       margin: auto;
+       /*background: white;*/
+       width: 100%;
+       padding: .5rem;
+       margin-top: 1rem;
+       color: rgb(206, 206, 206);
+       text-shadow: 3px 2px 2px cyan;
+       font-weight: bold;
+       font-size: 20px;
+       font-family: 'Gentium Plus', serif;
+}
+
+/*-------DIV DUDAD-------*/
+div.funcionamiento_dudas{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-top: 2rem;
+}
+h2.dudas-h2{
+       font-family: 'Orbitron', sans-serif;
+       text-shadow: 1px 1px 1px blueviolet;
+       color: rgb(206, 206, 206);
+}
+
+p.contactanos-p{
+       /*background: white;*/
+       margin: 2rem;
+       padding: .9rem;
+       font-size: 20px;
+       border-radius: 09px;
+       border-bottom: 2px solid blueviolet;
+       border-right: 2px solid #8a2be2;
+       box-shadow: 2px 2px 2px cyan;
+       color: rgb(206, 206, 206);
+       background-color: black;
+       font-family: 'Gentium Plus', serif;
+}
+
+
+/*----------INICIO FOOTER---------*/
+footer{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       background-color: rgb(207, 207, 207);
+
+}
+div.footer_container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+}
+div.logo-div{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+}
+img.roleroslogo{
+       width: 60px;
+}
+p.correo-p{
+       font-family: 'Gentium Plus', serif;
+       margin-bottom: 1rem;
+       display: flex;
+       flex-direction: row;
+       text-align:start;
+       justify-content: center;
+}
+img.correo-img{
+       width: 20px;
+       margin-right: .2rem;
+}
+p.autor-p{
+       font-family: 'Orbitron', sans-serif;
+       
+}
+img.github-img{
+       width: 15px;
+}
+
+@media (min-width: 427px) {
+
+       
+}
+
+@media (min-width:768px){
+       div.juego_container{
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              margin-top: 2rem;
+       }
+       article.juego_escenarios{
+              width: 30%;
+              height: 300px;
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: start;
+              background-color: rgb(23, 23, 23);
+              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       }
+       article.juego_personajes{
+              width: 30%;
+              height: 300px;
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: start;
+              background-color: rgb(23, 23, 23);
+              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       }
+       article.juego_magicos{
+              width: 30%;
+              height: 300px;
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: start;
+              background-color: rgb(23, 23, 23);
+              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       }
+       .galeria {
+              display: flex;
+              flex-direction: row;
+              justify-content: center; 
+              /*border: 1px solid #555; */
+       }
+       .galeria img {
+              position: absolute;
+              top: 0%;
+              left: 30;
+              opacity: 0;
+              transition: opacity 3s;
+              width:  270px;
+              height: 160px;
+       }
+
+       img.personaje-img{
+              width: 270px; 
+              height: 160px;
+       }
+
+       /*----------Tarjeta rotatorias---------- */
+       div.funcionamiento_rolear{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+
+       }
+       h2.rolear-h2{
+              margin: 1rem;
+              align-self: center;
+              font-family: 'Orbitron', sans-serif;
+              text-shadow: 1px 1px 2px cyan;
+              color: rgb(206, 206, 206);
+              text-align: center;
+
+       }
+       section.ayuda{
+              width: 100%;
+       }
+       article.ayuda_container{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-top: 2rem;
+       }
+       
+       h2.ayuda-h2{
+              margin: 1rem;
+              font-family: 'Orbitron', sans-serif;
+              text-shadow: 1px 1px 1px blueviolet;
+              color: rgb(206, 206, 206);
+       }
+       
+       p.ayuda-p{
+              width: 90%;
+              margin: 1rem;
+              font-family: 'Gentium Plus', serif;
+              font-size: 20px;
+              text-align: center;
+              color: rgb(206, 206, 206);
+       }
+       div.ayuda-dado{
+              width: 90%;
+              margin: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+       }
+       
+       img.roll{
+              width: 50px;
+              height: auto;
+       }
+}
