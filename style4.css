@@ -5,7 +5,7 @@
 
 body{
        width: 100%;
-       height: 100vh;
+       height: 100%;
        background-image: url(./img/dragones1.jpg);
        background-position: center;
        background-repeat: no-repeat;
@@ -19,12 +19,12 @@ body{
 div.contacto_fondo{
        width: 100%;
        height: 100vh;
-       margin-top: 30%;
+       margin: auto;
 }
 
 div.contacto_container{
-       width: 80%;
-       height: 70vh;
+       width: 100%;
+       height: 100%;
        background: rgba(0, 0, 0, 0.5);
        display: flex;
        flex-direction: column;
@@ -39,38 +39,45 @@ img.roleros-logo{
        width: 70px;
 }
 h2{
-       font-family: 'Gentium Plus', serif;   
-       color: white;
+       font-family: 'Orbitron', sans-serif;  
+       color: rgb(206, 206, 206);
        text-shadow: 1px 1px 1px cyan;
+       letter-spacing: 1.4px;
+       font-size: 20px;
 }
 form.contacto_form{
        display: flex;
        flex-direction: column;
-       justify-content: space-around;
+       justify-content:center;
        align-items: center;
        margin: 1rem;
-       background: rgba(137, 43, 226, 0.726);
+       background-color: rgb(23, 23, 23);
        padding: 1rem;
        box-shadow: 2px 2px  2px  black;
        border-radius:3px;
+       width: 240px;
+       height: 300px;
 }
 input{
        font-family: 'Gentium Plus', serif;
        width: 80%;
+       height: 25px;
        border: none;
        text-align: center;
-       color:blueviolet;
+       background-color:rgb(206, 206, 206);
 }
 textarea{
        font-family: 'Gentium Plus', serif;
        width: 80%;
+       height: 100px;
        border: none;
        text-align: center;
-       color:blueviolet;
+       background-color:rgb(206, 206, 206);
 }
 button{
        width: 80%;
-       background: cyan;
+       height: 30px;
+       background-color:rgb(206, 206, 206);
        color: black;
        font-weight: bolder;
        font-family: 'Gentium Plus', serif;
@@ -88,3 +95,22 @@ a{
        text-decoration: none;
        color: white;
 }
+
+
+
+
+
+/* COLOR FONODO DORM 
+       background-color: rgb(23, 23, 23);
+
+COLORBLANCOOSCURO LETRAS 
+       color: rgb(206, 206, 206);
+
+
+FOSNT FAMILY TITULO 
+       font-family: 'Orbitron', sans-serif;
+
+FONTFAMILY CHICA
+       font-family: 'Gentium Plus', serif;
+       font size 20px;
+*/
