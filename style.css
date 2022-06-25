@@ -140,16 +140,18 @@ article.inicio_texto{
 h2.inicio_titulo{
        color: white;
        font-size: 40px;
+       letter-spacing: 1.4px;
        text-shadow: 2px 2px 2px black;
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
+       text-align: left;
 }
 p.inicio_parrafo{
-       text-align: justify;
        color: white;
        font-size: 20px;
        text-shadow: 2px 2px 2px black;
        font-family: 'Gentium Plus', serif;
+       text-align: left;
 }
 /* Fin sección inicio*/
 
@@ -159,19 +161,31 @@ section.juego{
        flex-direction: row;
        justify-content: center;
        align-items: center;
+       width: 100%;
 }
-/*img.plantas{
-       position:relative;
-       top: 0%;
-       right: 5%;
-}*/
+
 div.juego_container{
-       height: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       margin-top: 2rem;
+
 }
 /*----------INICIO SECCION ESCENARIOS-----------*/
 article.juego_escenarios{
-       height: 70vh;
-       background: rgb(40, 40, 40);
+       width: 80%;
+       height: 300px;
+       margin-top: 2rem;
+       margin-top: 1rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: start;
+       background-color: rgb(23, 23, 23);
+       -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
 }
 h2.escenarios_titulo{
        display: flex;
@@ -181,6 +195,10 @@ h2.escenarios_titulo{
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
        color: rgb(206, 206, 206);
+       text-align: center;
+       font-size: 20px;
+       width: 80%;
+       letter-spacing: 1.4px;
 }
 
 input.radio{
@@ -190,14 +208,13 @@ input.radio{
        margin: .2rem;
 }
 .galeria {
-       height: 90%;
-       width: var(--w);
+       height: 70%;
+       width: 100%;
        display: flex;
        flex-direction: row;
        align-items:flex-end;
        justify-content: center;
        position: relative; 
-       margin: auto;
        /*border: 1px solid #555; */
 }
      
@@ -207,8 +224,8 @@ input.radio{
        left: 30;
        opacity: 0;
        transition: opacity 3s;
-       width:  310px;
-       height: 300px;
+       width:  80%;
+       height: 80%;
 }
      
 .galeria input[type=radio] {
@@ -236,38 +253,53 @@ input.radio{
 
 /*------------INICIO SECCION PERSONAJES-----------*/
 article.juego_personajes{
+       width: 80%;
+       height: 300px;
        margin-top: 2rem;
-       background: rgb(40, 40, 40);
-       width: 100%;
+       margin-bottom: 1rem;
        display: flex;
        flex-direction: column;
        align-items: center;
-       justify-content:space-between;
+       justify-content: start;
+       background-color: rgb(23, 23, 23);
+       -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
 }
 
 img.personaje-img{
-       width: 310px; 
-       height: 300px;
+       width: 80%; 
+       height: 60%;
        align-items: center;
+       
 }
 
 h2.juego_personajes{
        display: flex;
        justify-content: center;
        align-items: center;
+       text-align: center;
        margin: 1rem;
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
        color: rgb(206, 206, 206);
+       font-size: 20px;
+       letter-spacing: 1.4px;
 }
 /*----------INICIO SECCION MAGICOS---------*/
 article.juego_magicos{
-       background: rgb(40, 40, 40);
-       width: 100%;
+       width: 80%;
+       height: 300px;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
        display: flex;
        flex-direction: column;
        align-items: center;
-       justify-content: space-between;
+       justify-content: start;
+       background-color: rgb(23, 23, 23);
+       -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
+       box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
 }
 h2.juego_magicos{
        display: flex;
@@ -277,11 +309,14 @@ h2.juego_magicos{
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
        color: rgb(206, 206, 206);
+       text-align: center;
+       font-size: 20px;
+       letter-spacing: 1.4px;
 }
 
 img.magicos-img{
-       width: 210px; 
-       height: 200px;
+       width: 80%; 
+       height: 70%;
        align-items: center;
 }
 img.magicos-img:hover{
@@ -298,13 +333,17 @@ article.ayuda_container{
        justify-content: center;
        align-items: center;
        margin-top: 2rem;
+       width: 80%;
+       margin: auto;
 }
 
 h2.ayuda-h2{
-       margin: 1rem;
+       margin-top: 3rem;
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
        color: rgb(206, 206, 206);
+       letter-spacing: 1.4px;
+       font-size: 20px;
 }
 
 p.ayuda-p{
@@ -336,7 +375,6 @@ img.roll{
 /*---------INICIO SECCION funcionamiento----------*/
 article.funcionamiento_container{
        background: rgb(40, 40, 40);
-       width: 100%;
        margin-top: 2rem;
 }
 /*---------DIV ROLEAR---------*/
@@ -349,14 +387,17 @@ div.funcionamiento_rolear{
 h2.rolear-h2{
        margin: 1rem;
        align-self: center;
+       text-align: center;
+       font-size: 20px;
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 2px blueviolet;
        color: rgb(206, 206, 206);
+       letter-spacing: 1.4px;
 }
 /*       TARJETA 1 frente */
 .card1 {
        position: relative;
-       width: 300px;
+       width: 80%;
        height: 350px;
        margin: 20px;
        border-radius: 10px;
@@ -395,6 +436,7 @@ h2.rolear-h2{
        color: rgb(206, 206, 206);
        text-align: center;
        font-family: 'Orbitron', sans-serif;
+       letter-spacing: 1.4px;
 }
    
 .card1 .back {
@@ -426,7 +468,7 @@ h2.rolear-h2{
 /*-----------TARJETA 2 Frente*/
 .card2 {
        position: relative;
-       width: 300px;
+       width: 80%;
        height: 350px;
        margin: 20px;
        border-radius: 10px;
@@ -465,6 +507,7 @@ h2.rolear-h2{
        color: rgb(206, 206, 206);
        text-align: center;
        font-family: 'Orbitron', sans-serif;
+       letter-spacing: 1.4px;
 }
    
 .card2 .back {
@@ -496,7 +539,7 @@ h2.rolear-h2{
 /*----------TARJETA 3 Frente----------*/
 .card3 {
        position: relative;
-       width: 300px;
+       width: 80%;
        height: 350px;
        margin: 20px;
        border-radius: 10px;
@@ -535,6 +578,7 @@ h2.rolear-h2{
        color: rgb(206, 206, 206);
        text-align: center;
        font-family: 'Orbitron', sans-serif;
+       letter-spacing: 1.4px;
 }
    
 .card3 .back {
@@ -573,10 +617,11 @@ p.rolear-p4{
        padding: .5rem;
        margin-top: 1rem;
        color: rgb(206, 206, 206);
-       text-shadow: 3px 2px 2px cyan;
+       text-shadow: 1px 1px 1px cyan;
        font-weight: bold;
        font-size: 20px;
        font-family: 'Gentium Plus', serif;
+       letter-spacing: 1.4px;
 }
 
 /*-------DIV DUDAD-------*/
@@ -586,11 +631,17 @@ div.funcionamiento_dudas{
        align-items: center;
        justify-content: center;
        margin-top: 2rem;
+       width: 80%;
+       margin: auto;
 }
 h2.dudas-h2{
        font-family: 'Orbitron', sans-serif;
        text-shadow: 1px 1px 1px blueviolet;
        color: rgb(206, 206, 206);
+       letter-spacing: 1.4px;
+       text-align: center;
+       margin-top: 3rem;
+       font-size: 20px;
 }
 
 p.contactanos-p{
@@ -603,7 +654,7 @@ p.contactanos-p{
        border-right: 2px solid #8a2be2;
        box-shadow: 2px 2px 2px cyan;
        color: rgb(206, 206, 206);
-       background-color: black;
+       background-color:  rgb(23, 23, 23);
        font-family: 'Gentium Plus', serif;
 }
 
@@ -613,7 +664,8 @@ footer{
        width: 100%;
        display: flex;
        flex-direction: column;
-       background-color: rgb(207, 207, 207);
+       background-color:rgb(23, 23, 23);
+       margin-top: 3rem;
 
 }
 div.footer_container{
@@ -626,6 +678,7 @@ div.logo-div{
        flex-direction: row;
        align-items: center;
        justify-content: center;
+       color: rgb(206, 206, 206);
 }
 img.roleroslogo{
        width: 60px;
@@ -637,6 +690,7 @@ p.correo-p{
        flex-direction: row;
        text-align:start;
        justify-content: center;
+       color: rgb(206, 206, 206);
 }
 img.correo-img{
        width: 20px;
@@ -644,6 +698,9 @@ img.correo-img{
 }
 p.autor-p{
        font-family: 'Orbitron', sans-serif;
+       letter-spacing: 1.4px;
+       color: rgb(206, 206, 206);
+       margin-bottom: 3rem;
        
 }
 img.github-img{
@@ -651,130 +708,300 @@ img.github-img{
 }
 
 @media (min-width: 427px) {
-
-       
-}
-
-@media (min-width:768px){
-       div.juego_container{
-              display: flex;
-              flex-direction: row;
-              width: 100%;
-              margin-top: 2rem;
-       }
        article.juego_escenarios{
-              width: 30%;
+              width: 70%;
               height: 300px;
-              margin: auto;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: start;
-              background-color: rgb(23, 23, 23);
-              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
        }
-       article.juego_personajes{
-              width: 30%;
-              height: 300px;
-              margin: auto;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: start;
-              background-color: rgb(23, 23, 23);
-              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-       }
-       article.juego_magicos{
-              width: 30%;
-              height: 300px;
-              margin: auto;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: start;
-              background-color: rgb(23, 23, 23);
-              -webkit-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              -moz-box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-              box-shadow: 0px 2px 21px 1px rgba(0,0,0,1);
-       }
-       .galeria {
-              display: flex;
-              flex-direction: row;
-              justify-content: center; 
-              /*border: 1px solid #555; */
-       }
+            
        .galeria img {
               position: absolute;
               top: 0%;
               left: 30;
               opacity: 0;
               transition: opacity 3s;
-              width:  270px;
-              height: 160px;
+              width:  80%;
+              height: 80%;
        }
-
+            
+       
+       /*------------INICIO SECCION PERSONAJES-----------*/
+       article.juego_personajes{
+              width: 70%;
+              height: 300px;
+       }
+       
        img.personaje-img{
-              width: 270px; 
-              height: 160px;
+              width: 80%; 
+              height: 60%;
+              align-items: center;      
        }
-
-       /*----------Tarjeta rotatorias---------- */
-       div.funcionamiento_rolear{
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
+       
+       /*----------INICIO SECCION MAGICOS---------*/
+       article.juego_magicos{
+              width: 70%;
+              height: 300px;
+       }
+       
+       img.magicos-img{
+              width: 70%; 
+              height: 70%;
               align-items: center;
+       }
 
-       }
-       h2.rolear-h2{
-              margin: 1rem;
-              align-self: center;
-              font-family: 'Orbitron', sans-serif;
-              text-shadow: 1px 1px 2px cyan;
-              color: rgb(206, 206, 206);
-              text-align: center;
-
-       }
-       section.ayuda{
-              width: 100%;
-       }
+       
+       /*---------INICIO SECCION AYUDA----------*/
        article.ayuda_container{
               display: flex;
               flex-direction: column;
               justify-content: center;
               align-items: center;
               margin-top: 2rem;
-       }
-       
-       h2.ayuda-h2{
-              margin: 1rem;
-              font-family: 'Orbitron', sans-serif;
-              text-shadow: 1px 1px 1px blueviolet;
-              color: rgb(206, 206, 206);
-       }
-       
-       p.ayuda-p{
-              width: 90%;
-              margin: 1rem;
-              font-family: 'Gentium Plus', serif;
-              font-size: 20px;
-              text-align: center;
-              color: rgb(206, 206, 206);
-       }
-       div.ayuda-dado{
-              width: 90%;
+              width: 70%;
               margin: auto;
-              display: flex;
-              justify-content: center;
-              align-items: center;
        }
        
        img.roll{
               width: 50px;
               height: auto;
+              /*animation: roll ease 8s;
+              -webkit-animation: roll ease 8s;
+              -moz-animation: roll ease 8s;
+              -o-animation: roll ease 8s;
+              -ms-animation: roll ease 8s*/;
        }
+
+       /*---------DIV ROLEAR---------*/
+       div.funcionamiento_rolear{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+       }
+
+       /*       TARJETA 1 frente */
+       .card1 {
+              position: relative;
+              width: 30%;
+              height: 300px;
+              border-radius: 10px;
+       }
+       .card1 .front h3 {
+              position: absolute;
+              top: 20%;
+              line-height: 20px;
+       }
+       
+       /*-----------TARJETA 2 Frente*/
+       .card2 {
+              position: relative;
+              width: 30%;
+              height: 300px;
+              border-radius: 10px;
+       }
+       .card2 .front h3 {
+              position: absolute;
+              top: 20%;
+              line-height: 20px;
+       }
+       
+       /*----------TARJETA 3 Frente----------*/
+       .card3 {
+              position: relative;
+              width: 30%;
+              height: 300px;
+              border-radius: 10px;
+       }
+       .card3 .front h3 {
+              position: absolute;
+              top: 20%;
+              line-height: 20px;
+       }
+       
+}
+
+@media(min-width: 769px){
+       /*----------Inicio seccion JUEGO-----------*/
+
+div.juego_container{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       margin-top: 2rem;
+}
+/*----------INICIO SECCION ESCENARIOS-----------*/
+article.juego_escenarios{
+       width: 30%;
+       height: 300px;
+       margin: auto;
+}
+     
+.galeria img {
+       width:  80%;
+       height: 160px;
+}
+
+
+/*------------INICIO SECCION PERSONAJES-----------*/
+article.juego_personajes{
+       width: 30%;
+       height: 300px;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: start;
+}
+
+img.personaje-img{
+       width: 80%; 
+       height: 160px;
+       align-items: center;
+       margin-top: 1.6rem; 
+}
+
+/*----------INICIO SECCION MAGICOS---------*/
+article.juego_magicos{
+       width: 30%;
+       height: 300px;
+       margin:auto ;
+}
+
+}
+@media(min-width: 770px){
+             /*----------Inicio seccion JUEGO-----------*/
+
+div.juego_container{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       margin-top: 2rem;
+}
+/*----------INICIO SECCION ESCENARIOS-----------*/
+article.juego_escenarios{
+       width: 30%;
+       height: 300px;
+       margin: auto;
+}
+     
+.galeria img {
+       width:  80%;
+       height: 160px;
+}
+
+
+/*------------INICIO SECCION PERSONAJES-----------*/
+article.juego_personajes{
+       width: 30%;
+       height: 300px;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: start;
+}
+
+img.personaje-img{
+       width: 80%; 
+       height: 160px;
+       align-items: center;
+       margin-top: 0;
+}
+
+/*----------INICIO SECCION MAGICOS---------*/
+article.juego_magicos{
+       width: 30%;
+       height: 300px;
+       margin:auto ;
+} 
+
+.card1 {
+       position: relative;
+       width: 25%;
+       height: 400px;
+       margin: 20px;
+       border-radius: 10px;
+}
+.card1 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+}
+   
+.card1 .front {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+   
+.card1 .front h3 {
+       width: 80%;
+       height: 40px;
+       text-align: center;
+}
+.card1 .back p {
+       width: 70%;
+       margin: auto;
+}
+
+.card2 {
+       position: relative;
+       width: 25%;
+       height: 400px;
+       margin: 20px;
+       border-radius: 10px;
+}
+.card2 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+}
+   
+.card2 .front {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+   
+.card2 .front h3 {
+       width: 80%;
+       height: 40px;
+       text-align: center;
+}
+.card2 .back p{
+       width: 70%;
+       margin: auto;
+}
+
+.card3 {
+       position: relative;
+       width: 25%;
+       height: 400px;
+       margin: 20px;
+       border-radius: 10px;
+}
+.card3 .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+}
+   
+.card3 .front {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+   
+.card3 .front h3 {
+       width: 80%;
+       height: 40px;
+       text-align: center;
+}
+.card3 .back p {
+       width: 70%;
+       margin: auto;
+}
+
 }
