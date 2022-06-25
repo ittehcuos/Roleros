@@ -77,8 +77,8 @@ textarea{
 button{
        width: 80%;
        height: 30px;
-       background-color:rgb(206, 206, 206);
-       color: black;
+       background-color:blueviolet;
+       color:rgb(206, 206, 206);
        font-weight: bolder;
        font-family: 'Gentium Plus', serif;
 }
