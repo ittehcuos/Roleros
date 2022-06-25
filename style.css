@@ -364,12 +364,12 @@ div.ayuda-dado{
 img.roll{
        width: 50px;
        height: auto;
-       /*animation: roll ease 8s;
-       -webkit-animation: roll ease 8s;
-       -moz-animation: roll ease 8s;
-       -o-animation: roll ease 8s;
-       -ms-animation: roll ease 8s*/;
+       animation:roll 7s ease 0s infinite normal forwards;
 }
+@keyframes roll{
+       0%{transform:translateX(0)}
+       100%{transform:translateX(100px)}
+       }
 
 
 /*---------INICIO SECCION funcionamiento----------*/
@@ -913,6 +913,14 @@ article.juego_magicos{
        height: 300px;
        margin:auto ;
 } 
+img.roll{
+       animation:roll 7s ease 0s infinite normal forwards;
+}
+@keyframes roll{
+       0%{transform:translateX(0)}
+       100%{transform:translateX(100px)}
+}
+
 
 .card1 {
        position: relative;

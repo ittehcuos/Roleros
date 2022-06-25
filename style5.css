@@ -283,3 +283,12 @@ p.rolear-p4{
        }
        }
 
+       width: 50px;
+       height: auto;
+       img.roll{
+              animation:roll 7s ease 0s infinite normal forwards;}
+       }
+       @keyframes roll{
+              0%{transform:translateX(0)}
+              100%{transform:translateX(100px)}
+              }
