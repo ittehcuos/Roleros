@@ -15,12 +15,11 @@ body{
 div.login_fondo{
        width: 100%;
        height: 100vh;
-       margin-top: 30%;
 }
 
 article.login_container{
-       width: 80%;
-       height: 70vh;
+       width: 100%;
+       height: 100%;
        background: rgba(0, 0, 0, 0.5);
        display: flex;
        flex-direction: column;
@@ -35,43 +34,66 @@ img.roleros-logo{
        width: 70px;
 }
 h2{
-       font-family: 'Gentium Plus', serif;   
-       color: white;
+       font-family: 'Orbitron', sans-serif;  
+       color: rgb(206, 206, 206);
        text-shadow: 1px 1px 1px cyan;
+       font-size: 20px;
+       letter-spacing: 1.4px;
 }
 div.login_form{
        display: flex;
        flex-direction: column;
-       justify-content: space-around;
+       justify-content: center;
        align-items: center;
        margin: 1rem;
-       background: rgba(137, 43, 226, 0.726);
+       background-color: rgb(23, 23, 23);
        padding: 1rem;
        box-shadow: 2px 2px  2px  black;
        border-radius:3px;
+       width: 240px;
+       height: 150px;
 }
 input{
        font-family: 'Gentium Plus', serif;
        width: 80%;
+       height: 25px;
        border: none;
        text-align: center;
        color:blueviolet;
+       background-color:rgb(206, 206, 206);
 }
 input.button{
       background: cyan;
       color: black;
       font-weight: bolder;
+      width: 80%;
+      height: 30px;
 }
 
 
 p{
        font-family: 'Gentium Plus', serif;
-       color: white;
+       color: rgb(206, 206, 206);
 }
 strong{
        color: cyan;
 }
 a{
        text-decoration: none;
-       color: white;
+       color: rgb(206, 206, 206);
 }
+
+/* COLOR FONODO DORM 
+       background-color: rgb(23, 23, 23);
+
+COLORBLANCOOSCURO LETRAS 
+       color: rgb(206, 206, 206);
+
+
+FOSNT FAMILY TITULO 
+       font-family: 'Orbitron', sans-serif;
+
+FONTFAMILY CHICA
+       font-family: 'Gentium Plus', serif;
+       font size 20px;
+*/
